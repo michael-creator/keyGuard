@@ -1,6 +1,6 @@
 class User:
     """
-    a class that generates new instances of Users.
+    class that generates new instances of Users.
     """
     pass
 
