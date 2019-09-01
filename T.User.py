@@ -10,4 +10,3 @@ class User:
         self.last_name = last_name
         self.phone_number = phone_number
         self.email = email
-def save 
