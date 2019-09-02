@@ -1,4 +1,4 @@
-# delani
+# keyGuard
 #### 
 This app will help users in being able to save their password and also generate new passwords, also for users who forget their password this app will help them remember..
 01-09-2019
