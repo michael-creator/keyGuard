@@ -32,4 +32,8 @@ def check_existing_users(number):
     Function that check if a user exists with that number and return a Boolean
     '''
     return User.User_exist(number)
- 
+ def display_users():
+    '''
+    Function that returns all the saved Users
+    '''
+    return User.display_users()

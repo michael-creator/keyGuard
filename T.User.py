@@ -37,6 +37,6 @@ class User:
                 return 
     @classmethod       
     def user_exist(cls,name):
-        for user in cls.user_list:
+        for user in class.user_list:
             if user.full_name == name:
                 return user
