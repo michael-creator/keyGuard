@@ -1,9 +1,10 @@
 # delani
 #### 
-This app enables the users to get new quotes and also be able to make their own quote and add them to tha App 18-08-2019
-#### By **michael maina**
+This app will help users in being able to save their password and also generate new passwords, also for users who forget their password this app will help them remember..
+01-09-2019
+#### By **michael maina and company**
 ## Description
-This app enables the users to to save  and also be able to make their own quote and add them to tha App..
+This app enables the users to to save password and also be able to generate new password for new accounts.
 ## Setup/Installation Requirements
 * creat an account with us and subscribe to our channel to get more info.
 * Download the app via the link
