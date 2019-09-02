@@ -15,9 +15,21 @@ def save_users(user):
     '''
     user.save_user()
 
-   def del_user(user):
+def del_user(user):
     '''
     Function to delete a user
     '''
-   user.delete_user()
+    user.delete_user()
+
+def find_user(number):
+      '''
+    Function that finds a user by number and returns the user
+    '''
+  return User.find_by_number(number)
+
+def check_existing_users(number):
+    '''
+    Function that check if a user exists with that number and return a Boolean
+    '''
+    return User.User_exist(number)
  
