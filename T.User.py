@@ -1,4 +1,7 @@
-class Person:
+import pyperclip 
+from credential import credential
+
+class User:
 
     """
     class that generates new instances of Users.
@@ -6,7 +9,7 @@ class Person:
     pass
 
 
-    person_list = []
+    User_list = []
     def __init__(self, first_name, last_name, phone_number, email):
         
         self.first_name = first_name,"mickey"
@@ -14,8 +17,8 @@ class Person:
         self.phone_number = phone_number,"0712345678"
         self.email = "mikelkarije@gmail.com"
         
-    def test_save_person(self):
+    def test_save_User(self):
         '''
-        test_saves a person test case if the person objet is saved into person list
+        test_saves a User test case if the User objet is saved into User list
         '''
-        Person.person_list.append(self)
+        User.User_list.append(self)
