@@ -1,7 +1,6 @@
 import unittest # Importing the unittest module
-# from person import Person # Importing the User class
-
-class TestPerson(unittest.TestCase):
+# from user import user # Importing the User class
+class TestUser(unittest.TestCase):
 
     '''
     Test class that defines test cases for the User class behaviours.
@@ -11,7 +10,7 @@ class TestPerson(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_contact =self("James","Muriuki","0712345678","james@ms.com") # create person object
+        self.new_contact =self("Mickey","karije","0712345678","mikelkarije@gmail.com","mickey_karije") # create user object
 
 
     def test_init(self):
@@ -21,15 +20,18 @@ class TestPerson(unittest.TestCase):
 
         self.assertEqual(self.new_contact.first_name,"mickey")
         self.assertEqual(self.new_contact.last_name,"karije")
+        self.assertEqual(self.new_contact.full_name,"mickey karije")
         self.assertEqual(self.new_contact.phone_number,"0712345678")
         self.assertEqual(self.new_contact.email,"mikelkarije@gmail.com")
+        
 
     def test_save_contact(self):
+        
         '''
-        test_save_person test case to test if the person object is saved into
-         the person list
+        test_save_user test case to test if the user object is saved into
+         the user list
         '''
-        self.new_contact.save_person() # saving the new person
+        self.new_contact.save_User() # saving the new user
         self.assertEqual(len(self),1)
 
 if __name__ ==  '__main__':
