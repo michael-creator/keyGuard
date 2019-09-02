@@ -14,8 +14,8 @@ class Person:
         self.phone_number = phone_number,"0712345678"
         self.email = "mikelkarije@gmail.com"
         
-    def save_person(self):
+    def test_save_person(self):
         '''
-        Method that saves a person to person list
+        test_saves a person test case if the person objet is saved into person list
         '''
         Person.person_list.append(self)
