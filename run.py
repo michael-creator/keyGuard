@@ -1,13 +1,13 @@
 #!/usr/bin/env python3.6
 # from user import User
 from credential import Credential
+from user import User
 
 def create_user(fname,lname,phone,email):
     '''
     Function to create a new user
     '''
-    User =(fname,lname,phone,email)
-    return User
+    new_user = User(fname,lname,phone,email)
 
 def save_users(user):
     '''
@@ -21,19 +21,11 @@ def del_user(user):
     '''
     user.delete_user()
 
-def find_user(number):
-      '''
-    Function that finds a user by number and returns the user
-    '''
-  return User.find_by_number(number)
 
-def check_existing_users(number):
-    '''
-    Function that check if a user exists with that number and return a Boolean
-    '''
-    return User.User_exist(number)
- def display_users():
-    '''
-    Function that returns all the saved Users
-    '''
-    return User.display_users()
+  
+def main():
+
+  print("Hello welcome to password locker")
+
+  if __name__ == "__main__":
+    main()
