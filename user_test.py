@@ -11,18 +11,15 @@ class TestUser(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_user =User("Mickey","karije","0712345678","mikelkarije@gmail.com") # create user object
+        self.new_user =User("mickey","hvvty565rp" ) # create user object
 
 
     def test_init(self):
         '''
         test_init test case to test if the object is initialized properly
         '''
-        self.assertEqual(self.new_user.first_name,"mickey")
-        self.assertEqual(self.new_user.last_name,"karije")
-        self.assertEqual(self.new_user.phone_number,"0712345678")
-        self.assertEqual(self.new_user.email,"mikelkarije@gmail.com")
-        
+        self.assertEqual(self.new_user.user_name,"mickey")
+        self.assertEqual(self.new_user.password,"hvvty565rp")
 
     def test_save_user(self):
         

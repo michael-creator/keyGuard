@@ -1,6 +1,5 @@
 import string
 import pyperclip
-from user import User
 from random import choice
 
 
@@ -39,19 +38,10 @@ class Credential:
         '''
         for credential in cls.credential_list:
              return credential
-def find_user(number):
-    '''
-    Function that finds a user by number and returns the user
-    '''
-    return User.find_by_number(number)
 
-def check_existing_user(number):
-    '''
-    Function that check if a user exists with that number and return a Boolean
-    '''
-    return User.user_exist(number)
-def display_users():
-    '''
-    Function that returns all the saved Users
-    '''
-    return User.display_users()
+    def del_credential(self):
+        '''
+        this function deletes credentials
+        '''
+        Credential.credential_list.remove(self)
+   

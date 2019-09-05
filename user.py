@@ -7,12 +7,10 @@ class user:
     class that generates new instances of Users.
     """
     user_list = []
-    def __init__(self, first_name, last_name, phone_number, email):
+    def __init__(self,user_name, password):
         
-        self.first_name = first_name,"mickey"
-        self.last_name = last_name,"karije"
-        self.phone_number = phone_number,"0712345678"
-        self.email = "mikelkarije@gmail.com"
+        self.user_name = user_name,"mickey"
+        self.password = password,"hvvty565rp"
         
     def save_user(self):
         '''
