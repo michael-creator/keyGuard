@@ -36,7 +36,16 @@ def main():
     password = input()
     save_users(create_user(user,password)
     print(f"Welcome {user} you have created an account with us, please enjoy")
-
+    print("press (a)login into an account, or (b) exit the program")
+        option = input()
+        if option == "a":
+          print("_"*25)
+          print("username:")
+            inputted_username = input()
+            print("Password:")
+            inputtedpassword = input()
+if inputpassword == userpassword and input_username == user:
+                print(f"welcome {user} Welcome to your password portal")
     while True:
         print("use this short code:cc-to create an account, dc-to display user_accounts, fc -to find user credentials") 
         short_code = input().lower()
@@ -52,7 +61,20 @@ def main():
         save_users(create_user("User_name,password")) # create and save new user Account.
 
         elif short_code == 'dc':
-        if display_users():
+          if display_credentials():
+           print("Here is a list of your credentials")
+          print('\n')
+          for credential in display_credentials():
+          print(f"Site:{credential.site}\n UserName:{credential.user_name}\n Password:{credential.account_password}")
+          print('\n')
+          else:
+          print('\n')
+          print("No credentials saved yet")
+          print('\n')
+          elif code == "dc":
+          print("Are you sure you want to delete this credentials y for Yes or n for No?.they will be deleted permanently!")
+              answer = input()
+              if answer == "y":
                             
 
   if __name__ == "__main__":
