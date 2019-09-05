@@ -41,9 +41,9 @@ def main():
         if option == "a":
           print("_"*25)
           print("username:")
-            inputted_username = input()
+            inputed_username = input()
             print("Password:")
-            inputtedpassword = input()
+            inputedpassword = input()
 if inputpassword == userpassword and input_username == user:
                 print(f"welcome {user} Welcome to your password portal")
     while True:
@@ -69,13 +69,16 @@ if inputpassword == userpassword and input_username == user:
           print('\n')
           else:
           print('\n')
-          print("No credentials saved yet")
+          print(" sorry credentials not found")
           print('\n')
           elif code == "dc":
           print("Are you sure you want to delete this credentials y for Yes or n for No?.they will be deleted permanently!")
               answer = input()
-              if answer == "y":
-                            
-
+              if answer == "y":                         
+          elif short_code == "ex":
+            print("Bye .......")
+            break
+            else:
+                print("I really didn't get that. Please use the short codes")
   if __name__ == "__main__":
     main()
