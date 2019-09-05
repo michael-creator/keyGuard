@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.6
 # from user import User
+import pyperclip
 from credential import Credential
 from user import User
 
