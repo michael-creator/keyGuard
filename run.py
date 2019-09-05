@@ -27,6 +27,17 @@ def del_user(user):
 def main():
 
   print("Hello welcome to password locker")
+  print("lets begin to create an account")
+  print("_"*25)
+  print("i. create Account")
+  print("Enter username")
+  user = input()#details of your username
+  print("Enter password")
+  user.password = input()
+  save_users(create_user(user,password)
+  print(f{user}welcome you have created an account with us. please enjoy )
+
+
 
   if __name__ == "__main__":
     main()

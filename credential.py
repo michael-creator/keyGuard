@@ -24,7 +24,7 @@ class Credential:
         Method that generates a random alphanumeric password
         '''
 
-        size = 4
+        size = 8
 
         alphanum = string.ascii_uppercase + string.digits + string.ascii_lowercase
 
