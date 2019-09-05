@@ -1,5 +1,6 @@
 import string
 import pyperclip
+from user import User
 from random import choice
 
 
@@ -42,7 +43,7 @@ def find_user(number):
     '''
     Function that finds a user by number and returns the user
     '''
-    return user.find_by_number(number)
+    return User.find_by_number(number)
 
 def check_existing_user(number):
     '''
